@@ -21,7 +21,7 @@ private:
 public:
     Matrix();
     Matrix(int);
-    Matrix(ifstream & is);
+    Matrix(ifstream & is); // Constructor from given file (takes data from it)
     Matrix(int**, int);
     Matrix(const Matrix&);
     Matrix(Matrix&&) = delete;
