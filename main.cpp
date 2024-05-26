@@ -34,12 +34,10 @@ int main(int argc, char* argv[])
     Matrix input_maxtrix(Input); //constructing Matrix (see simple.cpp/simple.h) from given txt file
   
     pair<vector<int>, vector<int> > sequence{first(input_maxtrix),second(input_maxtrix)};
-    Output << "First part: \n";
     for(auto&it: sequence.first)
     {
       Output << it << " ";
     }
-    Output << "\nSecond part: \n";
      for(auto&it: sequence.second)
     {
       Output << it << " ";
