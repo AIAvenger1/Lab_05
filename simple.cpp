@@ -71,7 +71,7 @@ Matrix::Matrix(ifstream & is)
         {
             if(!(is>>temp)) throw invalid_argument("Wrong character or amount, check in.txt");
             p[i][j] = temp;
-        }
+        } 
     }
 } 
 
@@ -124,7 +124,7 @@ vector<int> second(Matrix arr)
     // int even = 0;
     // if(N%2 == 0) even = 1;
     vector<int> sequence;
-    for(int j = 0; j < N/2 + j%2; ++j)
+    for(int j = 0; j < N/2 + N%2; ++j)
     {
        if(j%2 == 0) for(int i = N/2 + j; i < N; ++i)
        {
